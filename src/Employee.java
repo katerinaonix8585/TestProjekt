@@ -6,4 +6,9 @@ public class Employee extends Person{
         super(firstName, lastName);
         this.salary = salary;
     }
+
+    @Override
+    public String info() {
+        return String.format("%s (%d)", super.info(), this.salary);
+    }
 }
